@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora USDT → Bs</title>
+<style>
+body { font-family: Arial; background: #0f172a; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+.card { background: #1e293b; padding: 30px; border-radius: 20px; width: 90%; max-width: 400px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+h1 { text-align: center; color: #22c55e; margin-bottom: 20px; }
+input { width: 100%; padding: 15px; font-size: 20px; border-radius: 10px; border: none; margin: 10px 0; text-align: center; }
+button { width: 100%; padding: 15px; background: #22c55e; color: white; border: none; border-radius: 10px; font-size: 18px; font-weight: bold; cursor: pointer; }
+button:hover { background: #16a34a; }
+.result { text-align: center; font-size: 24px; margin-top: 20px; color: #4ade80; }
+.small { font-size: 12px; color: #94a3b8; text-align: center; margin-top: 15px; }
+</style>
+</head>
+<body>
+<div class="card">
+<h1>USDT → Bs</h1>
+<label>¿Cuántos USDT?</label>
+<input type="number" id="usdt" placeholder="0.00" step="0.01">
+<label>Tipo de cambio Bs</label>
+<input type="number" id="cambio" value="7.20" step="0.01">
+<button onclick="calcular()">Calcular</button>
+<div class="result" id="resultado">0.00 Bs</div>
+<p class="small">Cambia el tipo de cambio según P2P del día</p>
+</div>
+<script>
+function calcular() {
+  let usdt = document.getElementById('usdt').value;
+  let cambio = document.getElementById('cambio').value;
+  let total = usdt * cambio;
+  document.getElementById('resultado').innerText = total.toFixed(2) + " Bs";
+}
+</script>
+</body>
+</html>
