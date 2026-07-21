@@ -34,7 +34,7 @@
     <!-- Cuando subas el video a YouTube, pega el link aquí reemplazando TU_CODIGO -->
     <div style="margin: 20px 0;">
         <iframe width="100%" height="315" 
-            src="https://www.youtube.com/embed/TU_CODIGO?autoplay=1&mute=1&loop=1&playlist=TU_CODIGO" 
+     src="https://www.youtube.com/embed/Ndh-HB6j6mc"
             frameborder="0" style="border-radius: 12px;" allow="autoplay">
         </iframe>
     </div>
